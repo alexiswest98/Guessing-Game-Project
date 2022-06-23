@@ -33,7 +33,7 @@ function askGuess(){
 rl.question("Enter a guess: ", (num)=> {
     let converted = Number(num)
     if (checkGuess(converted) === false) return askGuess();
-    
+    else console.log("You win!") ;
     rl.close();
 
 });
